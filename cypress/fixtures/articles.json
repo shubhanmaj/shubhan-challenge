@@ -1,0 +1,39 @@
+{
+    "articles": [
+        {
+            "slug": "Article-14-9566",
+            "title": "Article 14",
+            "description": "My first create Article 14",
+            "body": "My first article description",
+            "createdAt": "2022-01-08T20:53:04.018Z",
+            "updatedAt": "2022-01-08T20:53:04.018Z",
+            "tagList": [],
+            "author": {
+                "username": "user34",
+                "bio": null,
+                "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+                "following": false
+            },
+            "favoritesCount": 1,
+            "favorited": true
+        },
+        {
+            "slug": "Article-8-9566",
+            "title": "Article 8",
+            "description": "My first create Article 8",
+            "body": "My first article description",
+            "createdAt": "2022-01-08T20:52:49.266Z",
+            "updatedAt": "2022-01-08T20:52:49.266Z",
+            "tagList": [],
+            "author": {
+                "username": "user34",
+                "bio": null,
+                "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+                "following": false
+            },
+            "favoritesCount": 1,
+            "favorited": true
+        }
+    ],
+    "articlesCount": 2
+}
