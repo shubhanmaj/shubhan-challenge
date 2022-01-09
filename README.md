@@ -23,6 +23,7 @@ Both parts of the test are geared around this open-source project: https://githu
 - The **entry criteria** for the above feature request
 - The **exit criteria** for the above feature request
 - Which tests are the highest priority for automation? 
+- Added the test plan in separate Test plan document
 
 ### Part 2 (Test Automation)
 
