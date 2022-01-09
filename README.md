@@ -1,64 +1,48 @@
-# ![Next.js + SWR Example App](project-logo.png)
+# QA Take Home Challenge
 
-> ### Next.js + SWR codebase containing real world examples (CRUD, auth, advanced patterns, etc) that adheres to the [RealWorld](https://github.com/gothinkster/realworld-example-apps) spec and API.
+Welcome to Morning Brew's QA Challenge 👋
 
-### [Demo](https://next-realworld.now.sh/)&nbsp;&nbsp;&nbsp;&nbsp;[RealWorld](https://github.com/gothinkster/realworld)
+## Details
 
-Originally created for this [GH issue](https://github.com/gothinkster/realworld/issues/336). The codebase is now feature complete; please submit bug fixes via pull requests & feedback via issues.
+This technical take home consists of 2 parts.
 
-We're currently working on some docs for the codebase (explaining where functionality is located, how it works, etc) but most things should be self explanatory if you have a minimal understanding of Next.js/SWR.
+Both parts of the test are geared around this open-source project: https://github.com/reck1ess/next-realworld-example-app
 
-## Getting started
+- The live application can be viewed [here](https://next-realworld.vercel.app/)
+- The api spec can be found [here](https://github.com/gothinkster/realworld/tree/main/api)
 
-You can view a live demo over at [https://next-realworld.now.sh/](https://next-realworld.now.sh/)
+### Part 1 (Test Planning)
 
-To get the frontend running locally:
+#### The following is a feature request from our product managers:
 
-- Clone this repo
-- `npm install` to install all dependencies
-- `npm run dev` to start the local server
+- Add the ability to delete users in the [Conduit](https://github.com/reck1ess/next-realworld-example-app) project.
+- Only users with the "system admin" role are able to delete users.
 
-### Making requests to the backend API
+#### Somewhere within this repository please write out the following in a text or markdown file:
 
-For convenience, we have a live API server running at `https://conduit.productionready.io/api` for the application to make requests against. You can view [the API spec here](https://github.com/GoThinkster/productionready/blob/master/api) which contains all routes & responses for the server.
+- The **entry criteria** for the above feature request
+- The **exit criteria** for the above feature request
+- Which tests are the highest priority for automation? 
 
-The source code for the backend server (available for Node, Rails and Django) can be found in the [main RealWorld repo](https://github.com/gothinkster/realworld).
+### Part 2 (Test Automation)
 
-If you want to change the API URL to a local server, simply edit `lib/utils/constant.js` and change `SERVER_BASE_URL` to the local server's URL (i.e. `localhost:3000/api`)
+Please write the following automated tests using tooling of your choice ([Cypress](https://www.cypress.io/) is prefered):
 
-## Functionality overview
+- Test the signin flow
+- Test the signup flow
+- Write tests around 1 additional feature listed in the [functionality overview](https://github.com/reck1ess/next-realworld-example-app#functionality-overview) that you think is a high priority
 
-The example application is a social blogging site (i.e. a Medium.com clone) called "Conduit". It uses a custom API for all requests, including authentication. You can view a live demo over at [https://next-realworld.now.sh/](https://next-realworld.now.sh/)
+## Timeframe
 
-**General functionality:**
+We're asking that you don't spend more than 6-8 hours on this task. Find a good stopping point and if you don't get everything done, consider just writing out what you would do next within this README.
 
-- Authenticate users via JWT (login/register pages + logout button on settings page)
-- CRU\* users (sign up & settings page - no deleting required)
-- CRUD Articles
-- CR\*D Comments on articles (no updating required)
-- GET and display paginated lists of articles
-- Favorite articles
-- Follow other users
+## Stuck
 
-**The general page breakdown looks like this:**
+If you get stuck or have any follow up questions you can reach out to Drew at drew@morningbrew.com.
 
-- Home page (URL: /)
-  - List of tags
-  - List of articles pulled from either Feed, Global, or by Tag
-  - Pagination for list of articles
-- Sign in/Sign up pages (URL: /user/login, /user/register)
-  - Use JWT (store the token in localStorage)
-- Settings page (URL: /user/settings )
-- Editor page to create/edit articles (URL: /editor/new, /editor/article-slug-here)
-- Article page (URL: /article/article-slug-here)
-  - Delete article button (only shown to article's author)
-  - Render markdown from server client side
-  - Comments section at bottom of page
-  - Delete comment button (only shown to comment's author)
-- Profile page (URL: /profile/username-here, /profile/username-here?favorite=true)
-  - Show basic user info
-  - List of articles populated from author's created articles or author's favorited articles
+We generally ask though, that you give this your best shot based on your understanding of the task. We will talk about the task and your understanding when you are done.
 
-<br />
+## Finishing up
 
-[![Brought to you by Thinkster](https://raw.githubusercontent.com/gothinkster/realworld/master/media/end.png)](https://thinkster.io)
+1) Please push all your code to this repo (or another repo that you've set up - but be sure to link it somehwere here).
+3) Please respond to the email from our Talent Acquisition team member to indicate the project is complete and to schedule a follow up with our Engineering team.
