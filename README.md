@@ -35,10 +35,10 @@ Please write the following automated tests using tooling of your choice ([Cypres
 ## Timeframe
 
 We're asking that you don't spend more than 6-8 hours on this task. Find a good stopping point and if you don't get everything done, consider just writing out what you would do next within this README.
-I was able to finished the assignment by the scheduled time. Faced issues while pushing to repository.
-Delete article functionality is failing due to locator or some element (wish could have spend little more time on it)
-Read/Update Article should have covered
-End of the execution mochaawesome/html report should be genrated
+- I was able to finished the assignment by the scheduled time. Faced issues while pushing to repository.
+- Delete article functionality is failing due to locator or some element (wish could have spend little more time on it)
+- Read/Update Article should have covered
+- End of the execution mochaawesome/html report should be genrated
 
 ## Stuck
 
